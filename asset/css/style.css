@@ -78,8 +78,8 @@ html, body {
     color: #fff6a9;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
-  animation: blink 6s infinite;
-  -webkit-animation: blink 6s infinite;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
 }
 
 @-webkit-keyframes blink {
