@@ -68,98 +68,66 @@ html, body {
     background-repeat: no-repeat;
 }
 /* -----------text animate-----------*/
-.animate {
-	font-size: 100px;
+.subtitle h1 {
+  font-size: calc(20px + 18vh);
+  line-height: calc(20px + 20vh);
+/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  animation: blink 6s infinite;
+  -webkit-animation: blink 6s infinite;
 }
 
-.animate span {
-	display: inline-block;
-}
-.animate span:nth-of-type(2) {
-	animation-delay: .05s;
-}
-.animate span:nth-of-type(3) {
-	animation-delay: .1s;
-}
-.animate span:nth-of-type(4) {
-	animation-delay: .15s;
-}
-.animate span:nth-of-type(5) {
-	animation-delay: .2s;
-}
-.animate span:nth-of-type(6) {
-	animation-delay: .25s;
-}
-.animate span:nth-of-type(7) {
-	animation-delay: .3s;
-}
-.animate span:nth-of-type(8) {
-	animation-delay: .35s;
-}
-.animate span:nth-of-type(9) {
-	animation-delay: .4s;
-}
-.animate span:nth-of-type(10) {
-	animation-delay: .45s;
-}
-.animate span:nth-of-type(11) {
-	animation-delay: .5s;
-}
-.animate span:nth-of-type(12) {
-	animation-delay: .55s;
-}
-.animate span:nth-of-type(13) {
-	animation-delay: .6s;
-}
-.animate span:nth-of-type(14) {
-	animation-delay: .65s;
-}
-.animate span:nth-of-type(15) {
-	animation-delay: .7s;
-}
-.animate span:nth-of-type(16) {
-	animation-delay: .75s;
-}
-.animate span:nth-of-type(17) {
-	animation-delay: .8s;
-}
-.animate span:nth-of-type(18) {
-	animation-delay: .85s;
-}
-.animate span:nth-of-type(19) {
-	animation-delay: .9s;
-}
-.animate span:nth-of-type(20) {
-	animation-delay: .95s;
-}
-.three span {
-	color: rgb(255, 71, 230);
-	opacity: 0;
-	transform: translate(-300px, 0) scale(0);
-	animation: sideSlide .5s forwards;
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
 }
 
-@keyframes sideSlide {
-	60% {
-		transform: translate(20px, 0) scale(1);
-		color:rgb(71, 114, 255);
-	}
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
 
-	80% {
-		transform: translate(20px, 0) scale(1);
-		color: rgb(243, 187, 177);
-	}
-
-	99% {
-		transform: translate(0) scale(1.2);
-		color: #00f0ff;
-	}
-
-	100% {
-		transform: translate(0) scale(1);
-		opacity: 1;
-		color:rgb(198, 241, 81);
-	}
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
 }
 
 
@@ -313,10 +281,18 @@ html, body {
   color: #fff;
   font-size: 3em;
 }
+.img-overlay p {
+  color:rgb(98, 231, 8);
+  position: absolute;
+  top: 80%;
+  left: 50;
+  font-size: 20px;
+}
+
 #overlay {
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 100%;
+  height: 91%;
   position: fixed;
   top: 86px;
   left: 0;
@@ -334,9 +310,7 @@ html, body {
   width: 70%;
   height: auto;
   object-fit: contain;
-  padding-bottom: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 5%;
 }
 @media screen and (min-width: 768px) {
   #overlay img {
@@ -360,6 +334,7 @@ html, body {
  }
 }
 #prevButton {
+  margin-bottom: ;
   color: #fff;
   font-size: 2em;
   transition: opacity 0.8s;
@@ -398,7 +373,7 @@ ul {
     padding: 0px;
 }
 .footer-section {
-  background: #151414;
+  background:linear-gradient(147deg, #000000 0%, #04619f 74%);
   position: relative;
 }
 .footer-cta {
@@ -577,19 +552,16 @@ ul {
     .third-background {
         height: 34rem;
     }
-    .subtitle span {
-      font-size: 5rem;
+    .subtitle h1 {
+      font-size: 4rem;
     }
     .description h4 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 @media (max-width:633px) {
   .subtitle span {
       font-size: 3rem;
-  }
-  .description h4 {
-      font-size: 1.5rem;
   }
   .content h2 {
       font-size: 1.5rem;

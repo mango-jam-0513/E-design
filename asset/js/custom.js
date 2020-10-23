@@ -118,6 +118,6 @@ $( ".img-wrapper" ).hover(
   // When the exit button is clicked
   $exitButton.click(function() {
 	// Fade out the overlay
-	$("#overlay").fadeOut("slow");
+	$("#overlay").fadeOut("normal");
   });
 //------------------ /gallery------------------
